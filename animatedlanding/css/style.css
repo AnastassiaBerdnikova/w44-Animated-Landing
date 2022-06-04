@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #777;
+}
+
+header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, rgba(133, 214, 133, 0.288), rgba(5, 5, 65, 0.404)), 
+    url("../image/pexels-life-of-pix-7640.jpg");
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(50% 0%, 99% 1%, 100% 43%, 99% 99%, 68% 100%, 32% 100%, 1% 98%, 0% 43%, 1% 1%);
+    position: relative;
+    
+   
+}
+.text-box {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50px);
+}
+
+.heading-primary {
+    text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    color: rgb(43, 40, 40);
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    
+}
+
+@keyframes moveInLeft { 0% {
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+80%{
+    transform: translateX(20px);
+}
+
+100% {transform: translateX(0);
+opacity: 1;}
+    
+} 
+
+.heading-primary-sub {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    color: rgb(27, 26, 26);
+    animation: moveInRight;
+    animation-duration: 3s;
+    
+
+}
+
+@keyframes moveInRight { 0% {
+    transform: translateX(200px);
+    opacity: 0;
+}
+
+80%{
+    transform: translateX(20px);
+}
+
+100% {transform: translateX(0);
+opacity: 1;}
+    
+} 
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid white;
+    color: rgb(27, 25, 25);
+    transition: all 1s;
+    
+}
+
+.btn:hover {
+    background-color: rgba(128, 128, 128, 0.452);
+    color: white;
+    transform: translateY(-3px);
+}
+ 
+.btn:active {
+    transform: translateY(0);
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(105px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+footer p {
+    overflow: hidden;
+    animation: fadeIn 3s;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
